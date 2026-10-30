@@ -1,0 +1,8 @@
+# landed/pyproject.toml
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q --cov=app --cov-report=term-missing --cov-fail-under=95"
+
+[tool.coverage.run]
+branch = true
