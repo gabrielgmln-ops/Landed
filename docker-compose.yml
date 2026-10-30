@@ -1,0 +1,8 @@
+# landed/docker-compose.yml
+# Landed na porta 8001 do host: é onde o Rastreador de Importação a procura (LANDED_URL).
+services:
+  landed:
+    build: .
+    ports:
+      - "8001:8001"
+    restart: unless-stopped
